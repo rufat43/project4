@@ -1,6 +1,7 @@
 :root{
     --color-button: rgb(190, 173, 143);
     --color-text: rgb(167, 167, 167);
+    --color-bg: rgb(248, 248, 248);
 }
 *{
     box-sizing: border-box;
@@ -9,17 +10,19 @@
 }
 
 body{
-    background-color: rgb(248, 248, 248);
+    cursor: grabbing;
 }
 
 /* Nav start */
 nav{
+    background-color: var(--color-bg);
+    background-attachment: local;
     display: grid;
     grid-template-columns: 400px 600px 200px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 3rem;
+    padding: 1rem 3rem;
     position: fixed;
     top: 0;
 }
@@ -57,6 +60,12 @@ nav{
     border: 2px solid var(--color-button);
     padding: 5px 20px;
 }
+
+.nav-button a:hover{
+    color: var(--color-text);
+    border: 2px solid var(--color-text);
+    transition: 0.5s;
+}
 /* Nav end */
 
 /* Perfect start */
@@ -64,10 +73,10 @@ nav{
 .perfect{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    background-color: rgb(248, 248, 248);
+    background-color: var(--color-bg);
     height: 100vh;
     margin-bottom: 150px;
+    padding-top: 150px;
 }
 
 .perfect-container{
@@ -78,7 +87,7 @@ nav{
 .perfect-img img{
     width: 670px;
     padding: 0 50px;
-    background-color: rgb(248, 248, 248);
+    background-color: var(--color-bg);
 }
 
 .perfect-text{
@@ -87,7 +96,7 @@ nav{
 
 .perfect-text-p-1{
     font-size: 15px;
-    color: rgb(190, 173, 143);
+    color: var(--color-button);
     margin-bottom: 40px;
 }
 
@@ -122,11 +131,23 @@ nav{
     font-size: 20px;
 }
 
+.perfect-button-1 a:hover{
+    border: 2px solid var(--color-text);
+    background-color: var(--color-text);
+    transition: 0.5s;
+}
+
 .perfect-button-2 a{
-    color: rgb(190, 173, 143);
+    color: var(--color-button);
     border: 2px solid var(--color-button);
     padding: 7px 35px;
     font-size: 20px;
+}
+
+.perfect-button-2 a:hover{
+    border: 2px solid var(--color-text);
+    color: var(--color-text);
+    transition: 0.5s;
 }
 
 .perfect-mg{
@@ -162,6 +183,11 @@ nav{
     box-shadow: 0px 38px 29px -5px rgba(214,214,214,1);
 }
 
+.perfect-details-h2:hover{
+    background-color: var(--color-text);
+    transition: 0.5s;
+}
+
 summary{
     font-size: 20px;
     font-weight: 500;
@@ -177,6 +203,7 @@ summary{
     justify-content: start;
     height: 100vh;
     background-color: white;
+    margin: 1rem;
 }
 
 .room-type-text{
@@ -192,7 +219,7 @@ summary{
 
 .room-type-text-p-2{
     width: 500px;
-    color: rgb(167, 167, 167);
+    color: var(--color-text);
     font-size: 20px;
 }
 
@@ -244,6 +271,7 @@ summary{
     flex-direction: row;
     background-color: white;
     padding: 150px 45px;
+    margin: 1rem;
 }
 
 .about-us-container-1{
@@ -292,23 +320,34 @@ summary{
     width: 400px;
 }
 
-.about-us-grid-1{
+.about-us-grid{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     width: 300px;
     gap: 1rem 3rem;
     padding-left: 3rem;
+    border: 2px solid white;
 }
 
-.about-us-grid-1 p{
+.about-us-grid-1{
+    padding-left: 20px;
+}
+
+.about-us-grid-1:hover{
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.about-us-grid p{
     font-size: 22px;
     font-weight: 300;
     padding: 3px;
     color: var(--color-button);
 }
 
-.about-us-grid-1 h5{
+.about-us-grid h5{
     font-size: 18px;
     font-weight: 100;
 }
@@ -318,9 +357,10 @@ summary{
 /* Take-a-tour start */
 
 .take-a-tour{
+    background-color: var(--color-bg);
     display: flex;
     flex-direction: row;
-    padding: 150px 45px;
+    padding: 150px 1rem;
 }
 
 .take-a-tour-text{
@@ -354,6 +394,12 @@ summary{
     padding: 7px 35px;
     font-size: 20px;
     text-decoration: none;
+}
+
+.take-a-tour-button-1 a:hover{
+    border: 2px solid var(--color-text);
+    background-color: var(--color-text);
+    transition: 0.5s;
 }
 
 .take-a-tour-button-1 {
@@ -396,7 +442,7 @@ summary{
 }
 
 .out-blog-text-p-2{
-    color: rgb(167, 167, 167);
+    color: var(--color-text);
     font-size: 20px;
 }
 
@@ -432,7 +478,7 @@ summary{
 }
 
 .out-blog-card{
-    background-color:rgb(248, 248, 248);
+    background-color: var(--color-bg);
 }
 
 .out-blog-card-2{
@@ -447,7 +493,185 @@ summary{
 /* Out-blog end */
 
 /* Newsletter start */
+
+.newsletter{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.newsletter-text{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+    padding: 40px 40px 40px 80px;
+    /* ! */
+}
+
+.newsletter-text-p-1{
+    font-size: 15px;
+    color: rgb(190, 173, 143);
+    margin-bottom: 40px;
+}
+
+.newsletter-text-p-2{
+    width: 600px;
+    color: var(--color-text);
+    font-size: 20px;
+}
+
+.newsletter-text h1{
+    font-size: 45px;
+    color: black;
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.newsletter-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+    padding: 0 40px;
+}
+
+.newsletter-button a{
+    color: rgb(190, 173, 143);
+    border: 2px solid var(--color-button);
+    padding: 7px 35px;
+    font-size: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.newsletter-button a:hover{
+    color: var(--color-text);
+    border: 2px solid var(--color-text);
+    transition: 0.5s;
+}
+
 /* Newsletter end */
 
 /* Footer start */
+
+.footer-container{
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 3rem;
+}
+
+.footer-logo{
+    padding-bottom: 30px;
+}
+
+.footer-p{
+    color: var(--color-text);
+    width: 300px;
+    padding-bottom: 50px;
+    font-size: 18px;
+}
+
+.footer-button{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-button a{
+    color: white;
+    border: 2px solid var(--color-button);
+    background-color: var(--color-button);
+    padding: 15px 35px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-a-1 a{
+    border: 0;
+}
+
+.footer-a-2 a{
+    color: var(--color-button);
+    background-color: white;
+    padding: 5px 15px;
+    border: 10px solid var(--color-button);
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 30px;
+}
+
+.footer-social img{
+    background-color: var(--color-button);
+    padding: 2px;
+}
+
+.footer-social img:hover{
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.footer-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-card h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.footer-card a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+.footer-card a:hover{
+    color: var(--color-button);
+    transition: 0.5;
+}
+
+.footer-besnik{
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-besnik-p p{
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+.footer-besnik-a{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footer-besnik-a a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+
 /* Footer end */
