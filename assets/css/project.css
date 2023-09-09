@@ -13,6 +13,12 @@ body{
     cursor: grabbing;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Nav start */
 nav{
     background-color: var(--color-bg);
@@ -73,6 +79,7 @@ nav{
 .perfect{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: var(--color-bg);
     height: 100vh;
     margin-bottom: 150px;
@@ -200,6 +207,7 @@ summary{
 .room-type{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: start;
     height: 100vh;
     background-color: white;
@@ -268,10 +276,13 @@ summary{
 
 .about-us{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     background-color: white;
     padding: 150px 45px;
     margin: 1rem;
+    height: 100vh;
 }
 
 .about-us-container-1{
@@ -359,6 +370,8 @@ summary{
 .take-a-tour{
     background-color: var(--color-bg);
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     padding: 150px 1rem;
 }
@@ -566,6 +579,9 @@ summary{
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
 }
 
 .footer-logo{
