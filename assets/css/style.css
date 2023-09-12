@@ -70,6 +70,7 @@ nav{
 .nav-button a:hover{
     color: var(--color-text);
     border: 2px solid var(--color-text);
+    background-color: white;
     transition: 0.5s;
 }
 /* Nav end */
@@ -81,7 +82,7 @@ nav{
     flex-direction: column;
     align-items: center;
     background-color: var(--color-bg);
-    height: 100vh;
+    /* height: 100vh; */
     margin-bottom: 150px;
     padding-top: 150px;
 }
@@ -209,7 +210,7 @@ summary{
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: white;
     margin: 1rem;
 }
@@ -282,7 +283,7 @@ summary{
     background-color: white;
     padding: 150px 45px;
     margin: 1rem;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .about-us-container-1{
@@ -374,6 +375,7 @@ summary{
     justify-content: center;
     flex-direction: row;
     padding: 150px 1rem;
+    /* height: 100vh; */
 }
 
 .take-a-tour-text{
@@ -440,6 +442,7 @@ summary{
     flex-direction: column;
     padding: 150px 45px;
     background-color: white;
+    /* height: 100vh; */
 }
 
 .out-blog-text{
@@ -471,10 +474,6 @@ summary{
     justify-content: center;
     gap: 1.5rem;
 }
-
-/* .out-blog-card, .out-blog-card-2{
-    padding: 5px;
-} */
 
 .out-blog-card img, .out-blog-card-2 img{
     width: 330px;
@@ -513,6 +512,7 @@ summary{
     flex-direction: row;
     justify-content: center;
     padding-bottom: 150px;
+    margin-top: 150px;
 }
 
 .newsletter-text{
@@ -562,6 +562,7 @@ summary{
 .newsletter-button a:hover{
     color: var(--color-text);
     border: 2px solid var(--color-text);
+    background-color: white;
     transition: 0.5s;
 }
 
@@ -580,7 +581,7 @@ summary{
     grid-template-columns: auto auto auto auto;
     padding: 3rem;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 7rem;
 }
 
@@ -669,7 +670,8 @@ summary{
     padding: 1rem 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30rem;
 }
 
 .footer-besnik-p p{
